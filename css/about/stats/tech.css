@@ -1,0 +1,28 @@
+
+#stats-tech {
+    grid-area: tech;
+}
+
+#tech-docker-level {
+    width: 12rem;
+}
+
+#tech-azure-level {
+    width: 10rem;
+}
+
+#tech-node-js-level {
+    width: 16rem;
+}
+
+#tech-git-img {
+    filter: invert(1.0);
+}
+
+#tech-git-level {
+    width: 15rem;
+}
+
+#tech-react-level {
+    width: 11rem;
+}

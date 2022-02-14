@@ -1,0 +1,20 @@
+
+.whoami {
+    max-width: 24rem;
+    grid-area: whoami;
+    color: var(--color-secondary);
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: "wai-title"
+                         "wai-description";
+}
+
+.whoami-title {
+    grid-area: wai-title;
+    margin: auto 0;
+}
+
+.whoami-desc {
+    grid-area: wai-description;
+}
