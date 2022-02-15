@@ -10,9 +10,11 @@
     align-items: center;
     justify-items: center;
     grid-row-gap: 4rem;
+    grid-column-gap: 2rem;
 }
 
 .edu-header {
+    justify-self: flex-start;
     grid-area: heading;
     color: var(--color-secondary);
     margin: 0;
@@ -25,14 +27,15 @@
 }
 
 .edu-item-title {
+    max-width: 8rem;
     color: var(--color-secondary);
     margin: 0;
 }
 
 .edu-item-img {
     filter: invert(1.0);
-    height: 8rem;
-    width: 8rem;
+    height: 6rem;
+    width: 6rem;
 }
 
 #degree {
@@ -45,6 +48,6 @@
 
 .edu-logo {
     grid-area: logo;
-    width: 20rem;
+    width: 16rem;
     height: auto;
 }

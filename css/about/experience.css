@@ -17,8 +17,10 @@
 .exp-content {
     display: grid;
     grid-gap: 1rem;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "casestudies programming";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "casestudies"
+                         "programming";
 }
 
 #casestudies {
@@ -42,13 +44,15 @@
 
 .exp-img {
     grid-area: exp-img;
-    width: 8rem;
+    width: 10rem;
     align-self: center;
     filter: invert(1.0) opacity(0.15);
 }
 
 .exp-num {
     grid-area: exp-img;
+    font-size: 8rem;
+    line-height: 8rem;
     margin: 0;
     color: var(--color-secondary);
 }

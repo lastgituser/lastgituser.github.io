@@ -8,14 +8,14 @@
         <link rel="stylesheet" type="text/css" href="../css/about/hero.css" />
         <link rel="stylesheet" type="text/css" href="../css/about/belowthefold.css" />
         <link rel="stylesheet" type="text/css" href="../css/about/experience.css" />
-        <link rel="stylesheet" type="text/css" href="../css/about/creds.css" />
         <link rel="stylesheet" type="text/css" href="../css/about/whoami.css" />
         <link rel="stylesheet" type="text/css" href="../css/about/edu.css" />
         <link rel="stylesheet" type="text/css" href="../css/about/stats/stats.css" />
         <link rel="stylesheet" type="text/css" href="../css/about/stats/tech.css" />
         <link rel="stylesheet" type="text/css" href="../css/about/stats/tools.css" />
-        <link rel="stylesheet" type="text/css" href="../css/about/stats/skills.css" />
+        <link rel="stylesheet" type="text/css" href="../css/about/stats/uxskills.css" />
         <link rel="stylesheet" type="text/css" href="../css/about/stats/languages.css" />
+        <link rel="stylesheet" type="text/css" href="../css/about/stats/frameworks.css" />
         <link rel="stylesheet" type="text/css" href="../css/footer.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,155 +50,236 @@
         <section class="about-btf">
             <div class="about-btf-container">
                 <div class="edu">
-                    <h1 class="edu-header">Education</h1>
+                    <h2 class="edu-header">Education</h2>
                     <div class="edu-item" id="degree">
-                        <img class="edu-item-img" src="../images/icons/pngs/graduation-hat.png" />
-                        <h2 class="edu-item-title">BS in CS</h2>
+                        <img class="edu-item-img" src="../images/icons/edu/graduation-hat.png" />
+                        <h3 class="edu-item-title">Bachelor's of Science in Computer Science</h3>
                     </div>
                     <div class="edu-item" id="certificate">
-                        <img class="edu-item-img" src="../images/icons/pngs/certificate.png" />
-                        <h2 class="edu-item-title">Cert UX</h2>
+                        <img class="edu-item-img" src="../images/icons/edu/certificate.png" />
+                        <h3 class="edu-item-title">Certificate in User Experience Design</h3>
                     </div>
                     <img class="edu-logo" src="../images/icons/Georgia_Tech_Yellow_Jackets_logo.svg" />
                 </div>
-                <div class="stats" id="stats-tech">
-                    <h1 class="stats-header">Tech</h1>
-                    <div class="stats-list">
-                        <div class="stats-item">
-                            <img class="stats-img" id="tech-docker-img" src="../images/icons/pngs/docker.png" />
-                            <div class="stats-level" id="tech-docker-level"></div>
-                            <div class="stats-level-back"></div>
+                <div class="section" id="section-tech">
+                    <h2 class="section-header">Tech</h2>
+                    <div class="section-list">
+                        <div class="section-item">
+                            <img class="section-img" id="tech-docker-img" src="../images/icons/tech/technologies/docker-original.svg" />
+                            <h3 class="section-desc">Docker</h3>
                         </div>
-                        <div class="stats-item">
-                            <img class="stats-img" id="tech-azure-img" src="../images/icons/pngs/azure.png" />
-                            <div class="stats-level" id="tech-azure-level"></div>
-                            <div class="stats-level-back"></div>
+                        <div class="section-item">
+                            <img class="section-img" id="tech-azure-img" src="../images/icons/tech/technologies/azure-original.svg" />
+                            <h3 class="section-desc">Azure</h3>
                         </div>
-                        <div class="stats-item">
-                            <img class="stats-img" id="tech-node-js-img" src="../images/icons/pngs/node-js.png" />
-                            <div class="stats-level" id="tech-node-js-level"></div>
-                            <div class="stats-level-back"></div>
+                        <div class="section-item">
+                            <img class="section-img" id="tech-node-js-img" src="../images/icons/tech/technologies/nodejs-original.svg" />
+                            <h3 class="section-desc">Node.js</h3>
                         </div>
-                        <div class="stats-item">
-                            <img class="stats-img" id="tech-git-img" src="../images/icons/pngs/git-logo.png" />
-                            <div class="stats-level" id="tech-git-level"></div>
-                            <div class="stats-level-back"></div>
+                        <div class="section-item">
+                            <img class="section-img" id="tech-git-img" src="../images/icons/tech/technologies/git-original.svg" />
+                            <h3 class="section-desc">Git</h3>
                         </div>
-                        <div class="stats-item">
-                            <img class="stats-img" id="tech-ai-img" src="../images/icons/pngs/ai.png" />
-                            <div class="stats-level" id="tech-ai-level"></div>
-                            <div class="stats-level-back"></div>
+                        <div class="section-item">
+                            <img class="section-img" id="tech-kubernetes-img" src="../images/icons/tech/technologies/kubernetes-plain.svg" />
+                            <h3 class="section-desc">Kubernetes</h3>
                         </div>
-                    </div>
-                </div>
-                <div class="stats" id="stats-tools">
-                    <h1 class="stats-header">Tools</h1>
-                    <div class="stats-list">
-                        <div class="stats-item">
-                            <img class="stats-img" id="tools-figma-img" src="../images/icons/pngs/figma.png" />
-                            <div class="stats-level" id="tools-figma-level"></div>
-                            <div class="stats-level-back"></div>
+                        <div class="section-item">
+                            <img class="section-img" id="tech-mongodb-img" src="../images/icons/tech/technologies/mongodb-original.svg" />
+                            <h3 class="section-desc">MongoDB</h3>
                         </div>
-                        <div class="stats-item">
-                            <img class="stats-img" id="tools-trello-img" src="../images/icons/pngs/trello.png" />
-                            <div class="stats-level" id="tools-trello-level"></div>
-                            <div class="stats-level-back"></div>
+                        <div class="section-item">
+                            <img class="section-img" id="tech-mysql-img" src="../images/icons/tech/technologies/mysql-original.svg" />
+                            <h3 class="section-desc">MySQL</h3>
                         </div>
-                        <div class="stats-item">
-                            <img class="stats-img" id="tools-miro-img" src="../images/icons/pngs/miro.png" />
-                            <div class="stats-level" id="tools-miro-level"></div>
-                            <div class="stats-level-back"></div>
+                        <div class="section-item">
+                            <img class="section-img" id="tech-firebase-img" src="../images/icons/tech/technologies/firebase-plain.svg" />
+                            <h3 class="section-desc">Firebase</h3>
                         </div>
-                        <div class="stats-item">
-                            <img class="stats-img" id="tools-google-drive-img" src="../images/icons/pngs/google-drive.png" />
-                            <div class="stats-level" id="tools-google-drive-level"></div>
-                            <div class="stats-level-back"></div>
-                        </div>
-                        <div class="stats-item">
-                            <img class="stats-img" id="tools-invision-img" src="../images/icons/pngs/invision.png" />
-                            <div class="stats-level" id="tools-invision-level"></div>
-                            <div class="stats-level-back"></div>
+                        <div class="section-item">
+                            <img class="section-img" id="tech-jenkins-img" src="../images/icons/tech/technologies/jenkins-original.svg" />
+                            <h3 class="section-desc">Jenkins</h3>
                         </div>
                     </div>
                 </div>
-                <div class="stats" id="stats-skills">
-                    <h1 class="stats-header">Skills</h1>
-                    <div class="stats-list">
-                        <div class="stats-item">
-                            <img class="stats-img" id="skills-research-img" src="../images/icons/pngs/research.png" />
-                            <div class="stats-level" id="skills-research-level"></div>
-                            <div class="stats-level-back"></div>
+                <div class="section" id="section-frameworks">
+                    <h2 class="section-header">Frameworks</h2>
+                    <div class="section-list">
+                        <div class="section-item">
+                            <img class="section-img" id="framework-react-img" src="../images/icons/tech/frameworks/react-original.svg" />
+                            <h3 class="section-desc">React</h3>
                         </div>
-                        <div class="stats-item">
-                            <img class="stats-img" id="skills-sketching-img" src="../images/icons/pngs/pencil.png" />
-                            <div class="stats-level" id="skills-sketching-level"></div>
-                            <div class="stats-level-back"></div>
+                        <div class="section-item">
+                            <img class="section-img" id="framework-angularjs-img" src="../images/icons/tech/frameworks/angularjs-original.svg" />
+                            <h3 class="section-desc">AngularJS</h3>
                         </div>
-                        <div class="stats-item">
-                            <img class="stats-img" id="skills-prototyping-img" src="../images/icons/pngs/prototyping.png" />
-                            <div class="stats-level" id="skills-prototyping-level"></div>
-                            <div class="stats-level-back"></div>
+                        <div class="section-item">
+                            <img class="section-img" id="framework-express-img" src="../images/icons/tech/frameworks/express-original.svg" />
+                            <h3 class="section-desc">Express</h3>
                         </div>
-                        <div class="stats-item">
-                            <img class="stats-img" id="skills-testing-img" src="../images/icons/pngs/test.png" />
-                            <div class="stats-level" id="skills-testing-level"></div>
-                            <div class="stats-level-back"></div>
+                        <div class="section-item">
+                            <img class="section-img" id="fraework-bootstrap-img" src="../images/icons/tech/frameworks/bootstrap-original.svg" />
+                            <h3 class="section-desc">Bootstrap</h3>
                         </div>
-                        <div class="stats-item">
-                            <img class="stats-img" id="skills-wireframing-img" src="../images/icons/pngs/wireframe.png" />
-                            <div class="stats-level" id="skills-wireframing-level"></div>
-                            <div class="stats-level-back"></div>
+                        <div class="section-item">
+                            <img class="section-img" id="framework-flutter-img" src="../images/icons/tech/frameworks/flutter-original.svg" />
+                            <h3 class="section-desc">Flutter</h3>
+                        </div>
+                        <div class="section-item">
+                            <img class="section-img" id="framework-jquery-img" src="../images/icons/tech/frameworks/jquery-original.svg" />
+                            <h3 class="section-desc">JQuery</h3>
+                        </div>
+                        <div class="section-item">
+                            <img class="section-img" id="framework-numpy-img" src="../images/icons/tech/frameworks/numpy-original.svg" />
+                            <h3 class="section-desc">Numpy</h3>
+                        </div>
+                        <div class="section-item">
+                            <img class="section-img" id="framework-flask-img" src="../images/icons/tech/frameworks/flask-original.svg" />
+                            <h3 class="section-desc">Flask</h3>
+                        </div>
+                        <div class="section-item">
+                            <img class="section-img" id="framework-tensorflow-img" src="../images/icons/tech/frameworks/tensorflow-original.svg" />
+                            <h3 class="section-desc">Tensorflow</h3>
                         </div>
                     </div>
                 </div>
-                <div class="stats" id="stats-languages">
-                    <h1 class="stats-header">Languages</h1>
-                    <div class="stats-list">
-                        <div class="stats-item">
-                            <img class="stats-img" id="languages-js-img" src="../images/icons/pngs/js.png" />
-                            <div class="stats-level" id="languages-js-level"></div>
-                            <div class="stats-level-back"></div>
+                <div class="section" id="section-tools">
+                    <h2 class="section-header">Tools</h2>
+                    <div class="section-list">
+                        <div class="section-item">
+                            <img class="section-img" id="tools-figma-img" src="../images/icons/tech/tools/figma-original.svg" />
+                            <h3 class="section-desc">Figma</h3>
                         </div>
-                        <div class="stats-item">
-                            <img class="stats-img" id="languages-java-img" src="../images/icons/pngs/java.png" />
-                            <div class="stats-level" id="languages-java-level"></div>
-                            <div class="stats-level-back"></div>
+                        <div class="section-item">
+                            <img class="section-img" id="tools-trello-img" src="../images/icons/tech/tools/trello-plain.svg" />
+                            <h3 class="section-desc">Trello</h3>
                         </div>
-                        <div class="stats-item">
-                            <img class="stats-img" id="languages-css-img" src="../images/icons/pngs/css-3.png" />
-                            <div class="stats-level" id="languages-css-level"></div>
-                            <div class="stats-level-back"></div>
+                        <div class="section-item">
+                            <img class="section-img" id="tools-miro-img" src="../images/icons/tech/tools/miro.png" />
+                            <h3 class="section-desc">Miro</h3>
                         </div>
-                        <div class="stats-item">
-                            <img class="stats-img" id="languages-python-img" src="../images/icons/pngs/python.png" />
-                            <div class="stats-level" id="languages-python-level"></div>
-                            <div class="stats-level-back"></div>
+                        <div class="section-item">
+                            <img class="section-img" id="tools-inkscape-img" src="../images/icons/tech/tools/inkscape-original.svg" />
+                            <h3 class="section-desc">Inkscape</h3>
                         </div>
-                        <div class="stats-item">
-                            <img class="stats-img" id="languages-html-img" src="../images/icons/pngs/html-5.png" />
-                            <div class="stats-level" id="languages-html-level"></div>
-                            <div class="stats-level-back"></div>
+                        <div class="section-item">
+                            <img class="section-img" id="tools-invision-img" src="../images/icons/pngs/invision.png" />
+                            <h3 class="section-desc">inVision</h3>
+                        </div>
+                        <div class="section-item">
+                            <img class="section-img" id="tools-gimp-img" src="../images/icons/tech/tools/gimp-original.svg" />
+                            <h3 class="section-desc">GIMP</h3>
+                        </div>
+                        <div class="section-item">
+                            <img class="section-img" id="tools-xd-img" src="../images/icons/tech/tools/xd-plain.svg" />
+                            <h3 class="section-desc">Adobe XD</h3>
+                        </div>
+                        <div class="section-item">
+                            <img class="section-img" id="tools-jira-img" src="../images/icons/tech/tools/jira-original.svg" />
+                            <h3 class="section-desc">Jira</h3>
+                        </div>
+                        <div class="section-item">
+                            <img class="section-img" id="tools-github-img" src="../images/icons/tech/tools/github-original.svg" />
+                            <h3 class="section-desc">Github</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="section" id="section-skills">
+                    <h2 class="section-header">UX Skills</h2>
+                    <div class="section-list">
+                        <div class="section-item">
+                            <img class="section-img" id="skills-research-img" src="../images/icons/skills/research.png" />
+                            <h3 class="section-desc">Research</h3>
+                        </div>
+                        <div class="section-item">
+                            <img class="section-img" id="skills-sketching-img" src="../images/icons/skills/pencil.png" />
+                            <h3 class="section-desc">Sketching</h3>
+                        </div>
+                        <div class="section-item">
+                            <img class="section-img" id="skills-prototyping-img" src="../images/icons/skills/prototyping.png" />
+                            <h3 class="section-desc">Prototyping</h3>
+                        </div>
+                        <div class="section-item">
+                            <img class="section-img" id="skills-testing-img" src="../images/icons/skills/test.png" />
+                            <h3 class="section-desc">Testing</h3>
+                        </div>
+                        <div class="section-item">
+                            <img class="section-img" id="skills-wireframing-img" src="../images/icons/skills/wireframe.png" />
+                            <h3 class="section-desc">Wireframing</h3>
+                        </div>
+                        <div class="section-item">
+                            <img class="section-img" id="skills-ixd-img" src="../images/icons/skills/interact.png" />
+                            <h3 class="section-desc">Ixn Design</h3>
+                        </div>
+                        <div class="section-item">
+                            <img class="section-img" id="skills-infoarch-img" src="../images/icons/skills/hierarchical-structure.png" />
+                            <h3 class="section-desc">Info Arch</h3>
+                        </div>
+                        <div class="section-item">
+                            <img class="section-img" id="skills-uid-img" src="../images/icons/skills/ui-design.png" />
+                            <h3 class="section-desc">UI Design</h3>
+                        </div>
+                        <div class="section-item">
+                            <img class="section-img" id="skills-branding-img" src="../images/icons/skills/branding.png" />
+                            <h3 class="section-desc">Branding</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="section" id="section-languages">
+                    <h2 class="section-header">Languages</h2>
+                    <div class="section-list">
+                        <div class="section-item">
+                            <img class="section-img" id="languages-js-img" src="../images/icons/tech/languages/javascript-original.svg" />
+                            <h3 class="section-desc">Javascript</h3>
+                        </div>
+                        <div class="section-item">
+                            <img class="section-img" id="languages-java-img" src="../images/icons/tech/languages/java-original.svg" />
+                            <h3 class="section-desc">Java</h3>
+                        </div>
+                        <div class="section-item">
+                            <img class="section-img" id="languages-css-img" src="../images/icons/tech/languages/css3-original.svg" />
+                            <h3 class="section-desc">CSS</h3>
+                        </div>
+                        <div class="section-item">
+                            <img class="section-img" id="languages-python-img" src="../images/icons/tech/languages/python-original.svg" />
+                            <h3 class="section-desc">Python</h3>
+                        </div>
+                        <div class="section-item">
+                            <img class="section-img" id="languages-html-img" src="../images/icons/tech/languages/html5-original.svg" />
+                            <h3 class="section-desc">HTML</h3>
+                        </div>
+                        <div class="section-item">
+                            <img class="section-img" id="languages-cpp-img" src="../images/icons/tech/languages/cplusplus-original.svg" />
+                            <h3 class="section-desc">C++</h3>
+                        </div>
+                        <div class="section-item">
+                            <img class="section-img" id="languages-typescript-img" src="../images/icons/tech/languages/typescript-original.svg" />
+                            <h3 class="section-desc">Typescript</h3>
+                        </div>
+                        <div class="section-item">
+                            <img class="section-img" id="languages-swift-img" src="../images/icons/tech/languages/swift-original.svg" />
+                            <h3 class="section-desc">Swift</h3>
+                        </div>
+                        <div class="section-item">
+                            <img class="section-img" id="languages-go-img" src="../images/icons/tech/languages/go-original.svg" />
+                            <h3 class="section-desc">Go</h3>
                         </div>
                     </div>
                 </div>
                 <div class="experience">
-                    <h1 class="exp-header">Experience</h1>
+                    <h2 class="exp-header">Experience</h2>
                     <div class="exp-content">
                         <div class="exp-div" id="casestudies">
-                            <img class="exp-img" src="../images/icons/pngs/case-study.png" alt="Case Studies" />
+                            <img class="exp-img" src="../images/icons/exp/case-study.png" alt="Case Studies" />
                             <h1 class="exp-num">4</h1>
                             <h3 class="exp-desc">UX Case Studies</h3>
                         </div>
                         <div class="exp-div" id="programming">
-                            <img class="exp-img" src="../images/icons/pngs/programming.png" alt="Programming" />
+                            <img class="exp-img" src="../images/icons/exp/programming.png" alt="Programming" />
                             <h1 class="exp-num">1</h1>
                             <h3 class="exp-desc">Years Dev Experience</h3>
                         </div>
                     </div>
-                </div>
-                <div class="whoami">
-                    <h2 class="whoami-title">Who am I?</h2>
-                    <p class="whoami-desc">Full Stack Developer and small business advocate designing and building websites to solve tomorrow's problems. Focused on helping small businesses grow with a new and improved online presence. Skilled at Miro, Figma, Node.js, React, Angular, MongoDB, IxD, UI & UX Design, and Full Stack Development. </p>
                 </div>
             </div>
         </section>
@@ -251,19 +332,19 @@
                 <p class="footer-email">akhil10.kikkeri@gmail.com</p>
                 <div class="footer-social">
                     <a class="footer-social-link" href="https://linkedin.com/in/akhil-kikkeri-44850916b/">
-                        <img class="footer-social-img" src="../images/icons/pngs/linkedin-black.png" />
+                        <img class="footer-social-img" src="../images/icons/social/linkedin-black.png" />
                     </a>
                     <a class="footer-social-link" href="https://instagram.com/anirvidux">
-                        <img class="footer-social-img" src="../images/icons/pngs/instagram-black.png" />
+                        <img class="footer-social-img" src="../images/icons/social/instagram-black.png" />
                     </a>
                     <a class="footer-social-link" href="https://dribbble.com/anirvid">
-                        <img class="footer-social-img" src="../images/icons/pngs/dribbble-black.png" />
+                        <img class="footer-social-img" src="../images/icons/social/dribbble-black.png" />
                     </a>
                     <a class="footer-social-link" href="https://behance.net/akhilkikkeri">
-                        <img class="footer-social-img" src="../images/icons/pngs/behance-logo.png" />
+                        <img class="footer-social-img" src="../images/icons/social/behance-logo.png" />
                     </a>
                     <a class="footer-social-link" href="https://github.com/lastgituser">
-                        <img class="footer-social-img" src="../images/icons/pngs/github-big-logo.png" />
+                        <img class="footer-social-img" src="../images/icons/social/github-big-logo.png" />
                     </a>
                 </div>
                 <p class="footer-copyright">Copyright 2022</p>

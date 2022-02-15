@@ -11,13 +11,13 @@
     display: grid;
     padding: 4rem 0;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
-                         "edu languages experience"
-                         "edu languages whoami"
-                         "tech tools skills";
-    grid-row-gap: 2rem;
-    grid-column-gap: 2rem;
+                         "experience edu tech"
+                         "frameworks tools languages"
+                         "uxskills . .";
+    grid-row-gap: 6rem;
+    grid-column-gap: 4rem;
     justify-items: center;
     align-items: flex-start;
 }
