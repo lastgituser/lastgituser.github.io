@@ -72,7 +72,7 @@
 .description {
     max-width: 30rem;
     grid-area: description;
-    align-self: flex-start;
+    align-self: center;
 }
 
 .description-text {
