@@ -13,9 +13,10 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
-                         "experience edu tech"
-                         "frameworks tools languages"
-                         "uxskills . .";
+                         "eduexpdesc experience edu"
+                         "languages langframedesc frameworks"
+                         "tech platforms techplatdesc"
+                         "tools uxdesc uxskills";
     grid-row-gap: 6rem;
     grid-column-gap: 4rem;
     justify-items: center;

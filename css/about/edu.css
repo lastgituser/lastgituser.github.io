@@ -1,6 +1,7 @@
 
 .edu {
     grid-area: edu;
+    width: 22rem;
     display: grid;
     grid-template-rows: auto auto auto;
     grid-template-columns: 1fr 1fr;

@@ -1,0 +1,8 @@
+
+#section-platforms {
+    grid-area: platforms;
+}
+
+#platforms-osx-img {
+    filter: invert(1.0);
+}
