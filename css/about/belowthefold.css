@@ -8,6 +8,7 @@
 
 .about-btf-container {
     max-width: 100rem;
+    width: 90vw;
     display: grid;
     padding: 4rem 0;
     grid-template-columns: 1fr 1fr 1fr;
@@ -27,10 +28,15 @@
     .about-btf-container {
         grid-template-rows: auto auto auto auto;
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: "edu experience"
-                             "edu whoami"
-                             "languages tech"
-                             "tools skills";
+        grid-template-areas: 
+                             "edu experience"
+                             "eduexpdesc eduexpdesc"
+                             "languages frameworks"
+                             "langframedesc langframedesc"
+                             "tech platforms"
+                             "techplatdesc techplatdesc"
+                             "tools uxskills"
+                             "uxdesc uxdesc";
         grid-column-gap: 1rem;
         grid-row-gap: 2rem;
     }
@@ -40,13 +46,19 @@
     .about-btf-container {
         grid-template-rows: auto auto auto auto auto auto auto;
         grid-template-columns: 1fr;
-        grid-template-areas: "experience"
-                             "whoami"
+        grid-template-areas: 
+                             "eduexpdesc"
                              "edu"
+                             "experience"
+                             "langframedesc"
                              "languages"
+                             "frameworks"
+                             "techplatdesc"
                              "tech"
+                             "platforms"
+                             "uxdesc"
                              "tools"
-                             "skills";
+                             "uxskills";
         grid-row-gap: 4rem;
     }
 }

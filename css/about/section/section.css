@@ -5,7 +5,9 @@
     grid-template-columns: 1fr;
     grid-row-gap: 4rem;
     align-items: center;
-    width: 22rem;
+    justify-self: center;
+    width: 90vw;
+    max-width: 22rem;
 }
 
 .section-header {
@@ -18,7 +20,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 1rem;
-    width: 22rem;
+    max-width: 22rem;
 }
 
 .section-item {
@@ -41,6 +43,6 @@
 
 .section-text {
     color: var(--color-secondary);
-    width: 22rem;
+    max-width: 22rem;
     margin: 0;
 }

@@ -7,3 +7,11 @@
 #section-techplatdesc {
     grid-area: techplatdesc;
 }
+
+#section-uxdesc {
+    grid-area: uxdesc;
+}
+
+#section-langframedesc {
+    grid-area: langframedesc;
+}
