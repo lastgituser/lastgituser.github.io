@@ -43,8 +43,32 @@
     grid-area: project1;
 }
 
+#project-gthr:hover {
+    background-image: url(../../images/casestudycovers/gthrcover.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(0rem);
+}
+
+#project-gthr-title {
+    grid-area: project1;
+}
+
 #project-mpp {
     background-color: #C8AEFF;
+    grid-area: project2;
+}
+
+#project-mpp:hover {
+    background-image: url(../../images/casestudycovers/mppcover.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(0rem);
+}
+
+#project-mpp-title {
     grid-area: project2;
 }
 
@@ -53,13 +77,39 @@
     grid-area: project3;
 }
 
+#project-dhs:hover {
+    background-image: url(../../images/casestudycovers/dhscover.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(0rem);
+}
+
+#project-dhs-title {
+    grid-area: project3;
+}
+
 #project-ch {
     background-color: #A8ABFF;
     grid-area: project4;
 }
 
+#project-ch:hover {
+    background-image: url(../../images/casestudycovers/chcover.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(0rem);
+}
+
+#project-ch-title {
+    grid-area: project4;
+}
+
 .hero-work-text {
     color: var(--color-primary);
+    align-self: center;
+    justify-self: center;
 }
 
 @media only screen and (max-width: 600px) {
