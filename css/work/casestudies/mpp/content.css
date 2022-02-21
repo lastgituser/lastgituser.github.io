@@ -2,7 +2,7 @@
 #content-problem {
     display: flex;
     flex-direction: column;
-    grid-row-gap: 0rem;
+    grid-row-gap: 2rem;
 }
 
 #content-problem .text .text-desc-2col {
@@ -43,6 +43,11 @@
     grid-area: text;
 }
 
+#subhead-ui, #subhead-ps {
+    margin: 0;
+    margin-top: 2rem;
+}
+
 #img-idea {
     width: 40rem;
     height: 30rem;
@@ -50,6 +55,11 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+#subhead-vp {
+    margin: 0;
+    margin-top: 2rem;
 }
 
 #content-wireframing {

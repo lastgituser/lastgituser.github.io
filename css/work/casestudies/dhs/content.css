@@ -5,12 +5,12 @@
     grid-row-gap: 2rem;
 }
 
-#content-research {
-    grid-template-areas: ". text numbers .";
-}
-
 #content-problem .text .text-desc-2col {
     margin: 0;
+}
+
+#content-research {
+    grid-template-areas: ". text numbers .";
 }
 
 #text-research {
@@ -21,26 +21,40 @@
     grid-area: numbers;
 }
 
-#content-defidea {
+#content-problem {
+    background-color: var(--color-case-study);
+}
+
+#content-def {
     grid-template-areas: ". pic text .";
     background-color: var(--color-case-study);
 }
 
-#img-defidea {
+#img-def {
     width: 40rem;
     height: 30rem;
-    background-image: url(../../../../images/casestudyimages/gthr/userjourney.png);
+    background-image: url(../../../../images/casestudyimages/mpp/empathymap.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 }
 
-#text-defidea {
+#text-def {
     grid-area: text;
 }
 
+#img-idea {
+    width: 40rem;
+    height: 30rem;
+    background-image: url(../../../../images/casestudyimages/mpp/userjourney.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 #content-wireframing {
-    grid-template-areas: ". text pic .";
+    grid-template-areas: ". pic text .";
+    background-color: var(--color-case-study);
 }
 
 #img-wireframing {
@@ -52,8 +66,7 @@
 }
 
 #content-testing {
-    grid-template-areas: ". pic text .";
-    background-color: var(--color-case-study);
+    grid-template-areas: ". text pic .";
 }
 
 #img-testing {
@@ -63,7 +76,7 @@
     height: 50rem;
 }
 
-#content-problem {
+#content-textonly-final {
     background-color: var(--color-case-study);
 }
 
