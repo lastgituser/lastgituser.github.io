@@ -90,7 +90,12 @@
 
 .img-figma-mobile {
     width: 20rem;
-    height: 40rem;
+    height: 50rem;
+}
+
+.img-figma-desktop {
+    width: 40rem;
+    height: 30rem;
 }
 
 @media only screen and (min-width: 1400px) {
@@ -119,11 +124,16 @@
     }
     .content-textonly {
         padding: 4rem 1rem;
+    }
+    .text-title {
         max-width: 20rem;
-        align-self: center;
     }
     .text-desc-2col {
         column-count: 1;
         max-width: 20rem;
+    }
+    .img-figma-desktop {
+        width: 20rem;
+        height: 20rem;
     }
 }

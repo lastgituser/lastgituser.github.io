@@ -99,15 +99,7 @@
         max-width: 50rem;
         align-self: center;
     }
-    #content-defidea {
-        grid-template-areas: "pic"
-                             "text";
-    }
-    #content-wireframing {
-        grid-template-areas: "pic"
-                             "text";
-    }
-    #content-testing {
+    #content-def, #content-idea, #content-wireframing, #content-testing {
         grid-template-areas: "pic"
                              "text";
     }
@@ -122,8 +114,8 @@
         grid-template-areas: "numbers"
                              "text";
     }
-    #img-defidea {
-        height: 18rem;
-        width: 18rem;
+    #img-def, #img-idea {
+        height: 16rem;
+        width: 20rem;
     }
 }
