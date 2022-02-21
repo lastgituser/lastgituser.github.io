@@ -35,6 +35,8 @@
 
 .text {
     grid-area: text;
+    display: flex;
+    flex-direction: column;
 }
 
 .text-desc-2col {
@@ -45,6 +47,15 @@
 .text-desc-1col {
     max-width: 20rem;
     column-count: 1;
+}
+
+.subheading {
+    margin: 0;
+    margin-top: 1rem;
+}
+
+.margin0 {
+    margin: 0;
 }
 
 .bold {
@@ -88,7 +99,7 @@
 
 .img-figma-mobile {
     width: 20rem;
-    height: 50rem;
+    height: 40rem;
 }
 
 @media only screen and (min-width: 1400px) {

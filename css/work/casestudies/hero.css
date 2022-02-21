@@ -23,8 +23,7 @@
 .hero-title-back {
     grid-area: hero;
     background-color: var(--color-primary);
-    filter: opacity(0.9);
-    height: 10rem;
-    width: 20rem;
+    filter: opacity(0.95);
+    height: 8rem;
     border-radius: 1rem;
 }
