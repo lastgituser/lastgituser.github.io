@@ -18,6 +18,9 @@
 .hero-title {
     grid-area: hero;
     z-index: 0;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0;
 }
 
 .hero-title-back {

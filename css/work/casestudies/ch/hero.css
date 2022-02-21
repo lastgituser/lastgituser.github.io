@@ -1,0 +1,28 @@
+
+#hero-ch {
+    background-image: url(../../../../images/casestudycovers/chcover.png);
+}
+
+#hero-ch-title {
+    width: 36rem;
+}
+
+#hero-ch-title-back {
+    width: 36rem;
+    height: 8rem;
+}
+
+@media only screen and (max-width: 600px) {
+    #hero-ch-title {
+        width: 22rem;
+        height: 12rem;
+        align-self: flex-start;
+        margin-top: 2rem;
+    }
+    #hero-ch-title-back {
+        width: 22rem;
+        height: 12rem;
+        align-self: flex-start;
+        margin-top: 1.5rem;
+    }
+}

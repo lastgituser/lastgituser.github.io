@@ -6,3 +6,14 @@
 #hero-mpp-title-back {
     width: 22rem;
 }
+
+@media only screen and (max-width: 600px) {
+    #hero-mpp-title {
+        align-self: flex-start;
+        margin-top: 4.5rem;
+    }
+    #hero-mpp-title-back {
+        align-self: flex-start;
+        margin-top: 3rem;
+    }
+}
