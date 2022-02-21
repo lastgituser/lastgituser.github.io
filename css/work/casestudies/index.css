@@ -1,0 +1,17 @@
+
+:root {
+    --color-primary: #FFFFFF;
+    --color-primary-transparent: #FFFFFF00;
+    --color-secondary: #101820;
+    --color-accent: #004ca0;
+    --color-accent-2: #FEE715;
+    --color-case-study: #FFCEA1;
+}
+
+.img-logo {
+    filter: invert(1.0);
+}
+
+.footer-social-img {
+    filter: invert(1.0);
+}

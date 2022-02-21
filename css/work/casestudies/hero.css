@@ -1,0 +1,30 @@
+
+
+.hero {
+    height: calc(100vh - 5rem);
+    width: 100vw;
+    background-color: var(--color-case-study);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "hero";
+    align-items: center;
+    justify-items: center;
+}
+
+.hero-title {
+    grid-area: hero;
+    z-index: 0;
+}
+
+.hero-title-back {
+    grid-area: hero;
+    background-color: var(--color-primary);
+    filter: opacity(0.9);
+    height: 10rem;
+    width: 20rem;
+    border-radius: 1rem;
+}
