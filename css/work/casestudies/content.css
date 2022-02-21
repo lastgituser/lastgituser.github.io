@@ -91,6 +91,17 @@
     height: 50rem;
 }
 
+@media only screen and (min-width: 1400px) {
+    .text-desc-1col {
+        max-width: 40rem;
+        column-count: 2;
+    }
+    .text-desc-2col {
+        max-width: 80rem;
+        column-count: 4;
+    }
+}
+
 @media only screen and (max-width: 1200px) {
     .content {
         grid-template-columns: 1fr;
