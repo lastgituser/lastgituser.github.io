@@ -81,10 +81,14 @@
 
 .img {
     grid-area: pic;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-.img-figma {
+.img-figma-mobile {
     width: 20rem;
+    height: 50rem;
 }
 
 @media only screen and (max-width: 1200px) {
