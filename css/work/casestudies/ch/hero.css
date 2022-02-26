@@ -1,6 +1,6 @@
 
 #hero-ch {
-    background-image: url(../../../../images/casestudycovers/chcover.png);
+    background-image: url(../../../../images/casestudycovers/chmockups.png);
 }
 
 #hero-ch-title {
@@ -13,6 +13,9 @@
 }
 
 @media only screen and (max-width: 600px) {
+    #hero-ch {
+        background-position: bottom;
+    }
     #hero-ch-title {
         width: 22rem;
         height: 12rem;
