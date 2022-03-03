@@ -6,120 +6,18 @@
 }
 
 .hero {
+    width: 100vw;
+}
+
+.hero-container {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
-    padding: 0 10vw;
     max-width: 100rem;
     margin: 2rem auto;
 }
 
 .hero-title {
     color: var(--color-secondary);
-}
-
-.hero-work-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "project1 project1 project2"
-                         "project1 project1 project2"
-                         "project3 project4 project4";
-    grid-gap: 1rem;
-    height: 60vh;
-    width: 80vw;
-}
-
-.hero-work {
-    height: auto;
-    width: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-}
-
-#project-gthr {
-    background-color: #FFE8AE;
-    grid-area: project1;
-}
-
-#project-gthr:hover {
-    background-image: url(../../images/casestudycovers/gthrcover.png);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: blur(0rem);
-}
-
-#project-gthr-title {
-    grid-area: project1;
-}
-
-#project-mpp {
-    background-color: #C8AEFF;
-    grid-area: project2;
-}
-
-#project-mpp:hover {
-    background-image: url(../../images/casestudycovers/mppcover.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: blur(0rem);
-}
-
-#project-mpp-title {
-    grid-area: project2;
-}
-
-#project-dhs {
-    background-color: #AEFFF5;
-    grid-area: project3;
-}
-
-#project-dhs:hover {
-    background-image: url(../../images/casestudycovers/dhscover.png);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: blur(0rem);
-}
-
-#project-dhs-title {
-    grid-area: project3;
-}
-
-#project-ch {
-    background-color: #A8ABFF;
-    grid-area: project4;
-}
-
-#project-ch:hover {
-    background-image: url(../../images/casestudycovers/chcover.png);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: blur(0rem);
-}
-
-#project-ch-title {
-    grid-area: project4;
-}
-
-.hero-work-text {
-    color: var(--color-primary);
-    align-self: center;
-    justify-self: center;
-}
-
-@media only screen and (max-width: 600px) {
-    .hero-work-grid {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-areas: "project1"
-                             "project2"
-                             "project3"
-                             "project4";
-        height: 120vh;
-    }
+    margin: 0;
+    text-align: center;
 }

@@ -4,19 +4,16 @@
     height: calc(100vh - 5rem);
     width: 100vw;
     background-color: var(--color-case-study);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "hero";
     align-items: center;
     justify-items: center;
+    grid-template-columns: 1fr 20rem 60rem 20rem 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". mockup-left title mockup-right .";
 }
 
 .hero-title {
-    grid-area: hero;
+    grid-area: title;
     z-index: 0;
     text-align: center;
     vertical-align: middle;
@@ -24,9 +21,30 @@
 }
 
 .hero-title-back {
-    grid-area: hero;
+    grid-area: title;
     background-color: var(--color-primary);
     filter: blur(0.25rem) opacity(0.95);
     height: 8rem;
     border-radius: 1rem;
+}
+
+.mockup {
+    width: 45vh;
+    height: calc(100vh - 5rem - 2rem);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 100rem) {
+    .hero {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 12rem 1fr;
+        grid-template-areas: "title title"
+                             "mockup-left mockup-right";
+    }
+    .mockup {
+        height: calc(100vh - 5rem - 12rem - 2rem);
+        width: 50vw;
+    }
 }

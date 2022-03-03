@@ -1,19 +1,14 @@
 
-#hero-gthr {
-    background-image: url(../../../../images/casestudycovers/gthrcover.png);
-}
-
 #hero-gthr-title-back {
     width: 20rem;
 }
 
-@media only screen and (max-width: 600px) {
-    #hero-gthr-title {
-        align-self: flex-start;
-        margin-top: 4.5rem;
-    }
-    #hero-gthr-title-back {
-        align-self: flex-start;
-        margin-top: 3rem;
-    }
+#mockup-left {
+    grid-area: mockup-left;
+    background-image: url(../../../../images/mockups/gthr2.png);
+}
+
+#mockup-right {
+    grid-area: mockup-right;
+    background-image: url(../../../../images/mockups/gthr1.png);
 }

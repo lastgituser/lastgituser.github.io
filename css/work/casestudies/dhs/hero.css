@@ -1,19 +1,13 @@
-
-#hero-dhs {
-    background-image: url(../../../../images/casestudycovers/dhscover.png);
-}
-
 #hero-dhs-title-back {
     width: 14rem;
 }
 
-@media only screen and (max-width: 600px) {
-    #hero-dhs-title {
-        align-self: flex-start;
-        margin-top: 4.5rem;
-    }
-    #hero-dhs-title-back {
-        align-self: flex-start;
-        margin: 3rem;
-    }
+#mockup-left {
+    grid-area: mockup-left;
+    background-image: url(../../../../images/mockups/dhs2.png);
+}
+
+#mockup-right {
+    grid-area: mockup-right;
+    background-image: url(../../../../images/mockups/dhs1.png);
 }

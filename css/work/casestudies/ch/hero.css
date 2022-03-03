@@ -1,31 +1,32 @@
 
-#hero-ch {
-    background-image: url(../../../../images/casestudycovers/chmockups.png);
-}
-
 #hero-ch-title {
     width: 36rem;
+    grid-area: title;
 }
 
 #hero-ch-title-back {
     width: 36rem;
     height: 8rem;
+    grid-area: title;
+}
+
+#mockup-left {
+    grid-area: mockup-left;
+    background-image: url(../../../../images/mockups/ch2.png);
+}
+
+#mockup-right {
+    grid-area: mockup-right;
+    background-image: url(../../../../images/mockups/ch1.png);
 }
 
 @media only screen and (max-width: 600px) {
-    #hero-ch {
-        background-position: bottom;
-    }
     #hero-ch-title {
         width: 22rem;
         height: 12rem;
-        align-self: flex-start;
-        margin-top: 2rem;
     }
     #hero-ch-title-back {
         width: 22rem;
         height: 12rem;
-        align-self: flex-start;
-        margin-top: 1.5rem;
     }
 }

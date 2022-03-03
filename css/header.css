@@ -111,7 +111,7 @@ header {
     .header-links {
         display: none;
     }
-    .hamburger-menu-input:checked + header .hamburger-links + .header-logo + #day-night-toggle + .header-links + .hamburger-menu {
+    .hamburger-menu-input:checked + header * + * + * + *, .hamburger-menu-input:checked + header * + * + * + * + * {
         mask-image: url(../images/icons/x.svg);
         -webkit-mask-image: url(../images/icons/x.svg);
         mask-size: contain;

@@ -1,7 +1,7 @@
 
 .heading-casestudies {
     color: var(--color-secondary);
-    margin: 0 4rem;
+    text-align: center;
 }
 
 .case-study {
@@ -14,9 +14,49 @@
 }
 
 .case-study-img {
-    width: calc(48vw - 8rem);
+    width: 40vw;
     max-width: 40rem;
-    border-radius: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 30rem;
+}
+
+.mockup {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#mockup-gthr-1 {
+    background-image: url(../images/mockups/gthr1.png);
+}
+
+#mockup-gthr-2 {
+    background-image: url(../images/mockups/gthr2.png);
+}
+
+#mockup-mpp-1 {
+    background-image: url(../images/mockups/mpp1.png);
+}
+
+#mockup-mpp-2 {
+    background-image: url(../images/mockups/mpp2.png);
+}
+
+#mockup-dhs-1 {
+    background-image: url(../images/mockups/dhs1.png);
+}
+
+#mockup-dhs-2 {
+    background-image: url(../images/mockups/dhs2.png);
+}
+
+#mockup-ch-1 {
+    background-image: url(../images/mockups/ch1.png);
+}
+
+#mockup-ch-2 {
+    background-image: url(../images/mockups/ch2.png);
 }
 
 .case-study-text {

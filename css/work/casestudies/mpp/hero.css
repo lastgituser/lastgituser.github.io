@@ -1,19 +1,14 @@
 
-#hero-mpp {
-    background-image: url(../../../../images/casestudycovers/mppcover.png);
-}
-
 #hero-mpp-title-back {
     width: 22rem;
 }
 
-@media only screen and (max-width: 600px) {
-    #hero-mpp-title {
-        align-self: flex-start;
-        margin-top: 4.5rem;
-    }
-    #hero-mpp-title-back {
-        align-self: flex-start;
-        margin-top: 3rem;
-    }
+#mockup-left {
+    grid-area: mockup-left;
+    background-image: url(../../../../images/mockups/mpp2.png);
+}
+
+#mockup-right {
+    grid-area: mockup-right;
+    background-image: url(../../../../images/mockups/mpp1.png);
 }
