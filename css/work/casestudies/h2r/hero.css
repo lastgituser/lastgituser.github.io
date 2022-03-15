@@ -1,0 +1,14 @@
+
+#hero-gthr-title-back {
+    width: 20rem;
+}
+
+#mockup-left {
+    grid-area: mockup-left;
+    background-image: url(../../../../images/mockups/gthr2.png);
+}
+
+#mockup-right {
+    grid-area: mockup-right;
+    background-image: url(../../../../images/mockups/gthr1.png);
+}

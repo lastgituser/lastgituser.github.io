@@ -1,0 +1,106 @@
+
+#content-problem {
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 2rem;
+}
+
+#content-research {
+    grid-template-areas: ". text numbers .";
+}
+
+#content-problem .text .text-desc-2col {
+    margin: 0;
+}
+
+#text-research {
+    grid-area: text;
+}
+
+#numbers-research {
+    grid-area: numbers;
+}
+
+#content-defidea {
+    grid-template-areas: ". pic text .";
+    background-color: var(--color-case-study);
+}
+
+#img-defidea {
+    width: 40rem;
+    height: 30rem;
+    background-image: url(../../../../images/casestudyimages/gthr/userjourney.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#text-defidea {
+    grid-area: text;
+}
+
+#content-wireframing {
+    grid-template-areas: ". text pic .";
+}
+
+#img-wireframing {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 50rem;
+    width: auto;
+}
+
+#content-testing {
+    grid-template-areas: ". pic text .";
+    background-color: var(--color-case-study);
+}
+
+#img-testing {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 50rem;
+}
+
+#content-problem {
+    background-color: var(--color-case-study);
+}
+
+@media only screen and (max-width: 1200px) {
+    #content-research {
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr;
+        grid-template-areas: "text numbers";
+        grid-column-gap: 6rem;
+        max-width: 50rem;
+        align-self: center;
+    }
+    #content-defidea {
+        grid-template-areas: "pic"
+                             "text";
+    }
+    #content-wireframing {
+        grid-template-areas: "pic"
+                             "text";
+    }
+    #content-testing {
+        grid-template-areas: "pic"
+                             "text";
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #content-research {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-column-gap: 0rem;
+        grid-row-gap: 4rem;
+        grid-template-areas: "numbers"
+                             "text";
+    }
+    #img-defidea {
+        height: 16rem;
+        width: 16rem;
+    }
+}
