@@ -45,6 +45,6 @@
     }
     .mockup {
         height: calc(100vh - 5rem - 12rem - 2rem);
-        width: 50vw;
+        width: 48vw;
     }
 }

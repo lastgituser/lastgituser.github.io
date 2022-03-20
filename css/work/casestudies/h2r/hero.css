@@ -1,14 +1,25 @@
 
-#hero-gthr-title-back {
-    width: 20rem;
+#hero-h2r-title-back {
+    width: 44rem;
 }
 
 #mockup-left {
     grid-area: mockup-left;
-    background-image: url(../../../../images/mockups/gthr2.png);
+    background-image: url(../../../../images/mockups/h2r2.png);
 }
 
 #mockup-right {
     grid-area: mockup-right;
-    background-image: url(../../../../images/mockups/gthr1.png);
+    background-image: url(../../../../images/mockups/h2r1.png);
+}
+
+.hero {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 12rem 1fr;
+    grid-template-areas: "title title"
+                         "mockup-left mockup-right";
+}
+.mockup {
+    height: calc(100vh - 5rem - 12rem - 2rem);
+    width: 48vw;
 }

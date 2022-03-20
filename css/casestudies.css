@@ -59,6 +59,11 @@
     background-image: url(../images/mockups/ch2.png);
 }
 
+#mockup-h2r {
+    background-image: url(../images/mockups/h2r1.png);
+    grid-column: span 2;
+}
+
 .case-study-text {
     max-width: 20rem;
     margin: 2rem;
