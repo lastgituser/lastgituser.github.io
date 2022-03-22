@@ -1,0 +1,26 @@
+
+#work-hero {
+    --color-primary: #101820;
+    --color-secondary: #FFFFFF;
+    --color-accent: #FEE715;
+}
+
+#work-hero {
+    width: 100vw;
+    margin: 0 auto;
+    background-color: var(--color-primary);
+}
+
+#work-hero .hero-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+#work-hero .hero-title {
+    color: var(--color-secondary);
+    margin: 0;
+    text-align: center;
+}

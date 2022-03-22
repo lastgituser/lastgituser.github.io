@@ -1,0 +1,26 @@
+
+#hero-h2r-title-back {
+    width: 44rem;
+}
+
+#hero-h2r #mockup-left {
+    grid-area: mockup-left;
+    background-image: url(../../../../images/mockups/h2r2.png);
+}
+
+#hero-h2r #mockup-right {
+    grid-area: mockup-right;
+    background-image: url(../../../../images/mockups/h2r1.png);
+}
+
+#hero-h2r {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 12rem 1fr;
+    grid-template-areas: "title title"
+                         "mockup-left mockup-right";
+}
+
+#hero-h2r .mockup {
+    height: calc(100vh - 5rem - 12rem - 2rem);
+    width: 48vw;
+}

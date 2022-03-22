@@ -1,0 +1,109 @@
+#btf-gthr {
+    --color-case-study: #FFE8AE;
+}
+
+#btf-gthr #content-problem {
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 2rem;
+}
+
+#btf-gthr #content-research {
+    grid-template-areas: ". text numbers .";
+}
+
+#btf-gthr #content-problem .text .text-desc-2col {
+    margin: 0;
+}
+
+#btf-gthr #text-research {
+    grid-area: text;
+}
+
+#btf-gthr #numbers-research {
+    grid-area: numbers;
+}
+
+#btf-gthr #content-defidea {
+    grid-template-areas: ". pic text .";
+    background-color: var(--color-case-study);
+}
+
+#btf-gthr #img-defidea {
+    width: 40rem;
+    height: 30rem;
+    background-image: url(../../../../images/casestudyimages/gthr/userjourney.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#btf-gthr #text-defidea {
+    grid-area: text;
+}
+
+#btf-gthr #content-wireframing {
+    grid-template-areas: ". text pic .";
+}
+
+#btf-gthr #img-wireframing {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 50rem;
+    width: auto;
+}
+
+#btf-gthr #content-testing {
+    grid-template-areas: ". pic text .";
+    background-color: var(--color-case-study);
+}
+
+#btf-gthr #img-testing {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 50rem;
+}
+
+#btf-gthr #content-problem {
+    background-color: var(--color-case-study);
+}
+
+@media only screen and (max-width: 1200px) {
+    #btf-gthr #content-research {
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr;
+        grid-template-areas: "text numbers";
+        grid-column-gap: 6rem;
+        max-width: 50rem;
+        align-self: center;
+    }
+    #btf-gthr #content-defidea {
+        grid-template-areas: "pic"
+                             "text";
+    }
+    #btf-gthr #content-wireframing {
+        grid-template-areas: "pic"
+                             "text";
+    }
+    #btf-gthr #content-testing {
+        grid-template-areas: "pic"
+                             "text";
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #btf-gthr #content-research {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-column-gap: 0rem;
+        grid-row-gap: 4rem;
+        grid-template-areas: "numbers"
+                             "text";
+    }
+    #btf-gthr #img-defidea {
+        height: 16rem;
+        width: 16rem;
+    }
+}

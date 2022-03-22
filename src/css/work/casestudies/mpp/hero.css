@@ -1,0 +1,17 @@
+#hero-mpp {
+    --color-case-study: #879DFF;
+}
+
+#hero-mpp-title-back {
+    width: 22rem;
+}
+
+#hero-mpp #mockup-left {
+    grid-area: mockup-left;
+    background-image: url(../../../../images/mockups/mpp2.png);
+}
+
+#hero-mpp #mockup-right {
+    grid-area: mockup-right;
+    background-image: url(../../../../images/mockups/mpp1.png);
+}

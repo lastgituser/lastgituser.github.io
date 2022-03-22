@@ -1,0 +1,17 @@
+#hero-gthr {
+    --color-case-study: #FFE8AE;
+}
+
+#hero-gthr-title-back {
+    width: 20rem;
+}
+
+#hero-gthr #mockup-left {
+    grid-area: mockup-left;
+    background-image: url(../../../../images/mockups/gthr2.png);
+}
+
+#hero-gthr #mockup-right {
+    grid-area: mockup-right;
+    background-image: url(../../../../images/mockups/gthr1.png);
+}

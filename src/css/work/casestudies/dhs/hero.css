@@ -1,0 +1,17 @@
+#hero-dhs {
+    --color-case-study: #AEFFF5;
+}
+
+#hero-dhs-title-back {
+    width: 14rem;
+}
+
+#hero-dhs #mockup-left {
+    grid-area: mockup-left;
+    background-image: url(../../../../images/mockups/dhs2.png);
+}
+
+#hero-dhs #mockup-right {
+    grid-area: mockup-right;
+    background-image: url(../../../../images/mockups/dhs1.png);
+}

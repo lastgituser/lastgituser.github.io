@@ -1,0 +1,139 @@
+
+
+.btf {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+}
+
+.btf-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.content-textonly {
+    padding: 4rem 4rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "text";
+    align-items: center;
+    justify-items: center;
+}
+
+.content {
+    padding: 4rem 4rem;
+    display: grid;
+    grid-template-columns: 1fr auto auto 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". text pic .";
+    grid-column-gap: 6rem;
+    align-items: center;
+    justify-items: center;
+}
+
+.text {
+    grid-area: text;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-desc-2col {
+    max-width: 40rem;
+    column-count: 2;
+}
+
+.text-desc-1col {
+    max-width: 20rem;
+    column-count: 1;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.numbers {
+    display: flex;
+    flex-direction: column;
+}
+
+.number {
+    background-color: var(--color-case-study);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 14rem;
+    width: 14rem;
+    margin: 1rem 0;
+}
+
+.number-num {
+    margin: 0;
+    font-size: 8rem;
+    line-height: 8rem;
+}
+
+.number-desc {
+    margin: 0;
+    text-align: center;
+}
+
+.img {
+    grid-area: pic;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.img-figma-mobile {
+    width: 20rem;
+    height: 50rem;
+}
+
+.img-figma-desktop {
+    width: 40rem;
+    height: 30rem;
+}
+
+@media only screen and (min-width: 1400px) {
+    .text-desc-1col {
+        max-width: 40rem;
+        column-count: 2;
+    }
+    .text-desc-2col {
+        max-width: 80rem;
+        column-count: 4;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .content {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-column-gap: 0rem;
+        grid-row-gap: 4rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .content {
+        padding: 4rem 1rem;
+    }
+    .content-textonly {
+        padding: 4rem 1rem;
+    }
+    .text-title {
+        max-width: 20rem;
+    }
+    .text-desc-2col {
+        column-count: 1;
+        max-width: 20rem;
+    }
+    .img-figma-desktop {
+        width: 20rem;
+        height: 20rem;
+    }
+}

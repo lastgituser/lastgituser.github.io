@@ -1,0 +1,257 @@
+.hero-background-image {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -3;
+    object-fit: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.hero-background-gradient {
+    background: var(--color-primary);
+    background: -webkit-linear-gradient(bottom, var(--color-primary), var(--color-primary-transparent));
+    background: -moz-linear-gradient(bottom, var(--color-primary), var(--color-primary-transparent));
+    background: linear-gradient(to top, var(--color-primary), var(--color-primary-transparent));
+    position: absolute;
+    left: 0;
+    top: 50vh;
+    z-index: -1;
+    height: 50vh;
+    width: 100vw;
+}
+
+#home-hero {
+    max-width: 100rem;
+    width: 90vw;
+    align-items: center;
+    display: grid;
+    grid-column-gap: 1rem;
+    align-self: center;
+    grid-template-rows: 15rem 10rem calc(100vh - 15rem - 10rem - 5rem);
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "nameprof mockups"
+                         "description mockups"
+                         "cta mockups";
+    margin: 0 auto;
+}
+
+#home-hero .intro {
+    grid-area: nameprof;
+    width: auto;
+    height: auto;
+    align-self: flex-end;
+}
+
+#home-hero .firstname {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    font-size: 6rem;
+    line-height: 6rem;
+    color: var(--color-secondary);
+    margin-right: 2rem;
+}
+
+#home-hero .lastname {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 4rem;
+    color: var(--color-secondary);
+}
+
+#home-hero .uxui {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 100;
+    font-size: 3rem;
+    line-height: 3rem;
+    color: var(--color-secondary);
+    margin-right: 1rem;
+}
+
+#home-hero .description {
+    max-width: 30rem;
+    grid-area: description;
+    align-self: center;
+}
+
+#home-hero .description-text {
+    color: var(--color-secondary);
+}
+
+#home-hero .developer {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 100;
+    font-size: 2rem;
+    color: var(--color-secondary);
+}
+
+/* Mockup Styles */
+
+#home-hero .mockups {
+    grid-area: mockups;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "mockup1 mockup2";
+    height: auto;
+    align-self: center;
+    justify-self: center;
+}
+
+#home-hero .mockup1 {
+    width: 20rem;
+    background-image: url(../../images/mockups/ch1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: calc(100vh - 5rem - 2rem);
+    grid-area: mockup1;
+    justify-self: flex-end;
+    align-self: flex-start;
+}
+
+#home-hero .mockup2 {
+    width: 20rem;
+    background-image: url(../../images/mockups/mpp2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: calc(100vh - 5rem - 2rem);
+    grid-area: mockup2;
+}
+
+#home-hero .cta {
+    grid-area: cta;
+    align-self: flex-start;
+    justify-self: flex-start;
+    background-color: var(--color-accent);
+    color: var(--color-primary);
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 3.24rem;
+}
+
+#home-hero .cta:hover {
+    background-color: var(--color-secondary);
+}
+
+@media only screen and (max-width: 1100px) {
+    #home-hero {
+        display: grid;
+        grid-template-rows: 12rem calc(100vh - 12rem - 10rem - 10rem - 5rem) 10rem 10rem;
+        grid-template-columns: 1fr;
+        grid-template-areas: "nameprof"
+                             "mockups"
+                             "description"
+                             "cta";
+        justify-items: center;
+    }
+    #home-hero .description {
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+    }
+    #home-hero .cta {
+        justify-self: center;
+    }
+    #home-hero .creds {
+        justify-self: center;
+    }
+    #home-hero .degree {
+        justify-self: center;
+    }
+    #home-hero .experience {
+        align-self: center;
+        justify-self: center;
+    }
+    #home-hero .whoami {
+        justify-self: center;
+    }
+    #home-hero .mockups {
+        justify-self: center;
+    }
+    #home-hero .mockup1 {
+        width: auto;
+        height: calc(100vh - 12rem - 10rem - 10rem - 5rem - 2rem);
+        justify-self: flex-end;
+        align-self: center;
+    }
+    #home-hero .mockup2 {
+        width: auto;
+        height: calc(100vh - 12rem - 10rem - 10rem - 5rem - 2rem);
+        align-self: center;
+    }
+    #home-hero .intro {
+        align-self: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 1100px) and (max-height: 450px) {
+    #home-hero .mockups {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #home-hero .creds {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 1rem;
+        grid-column-gap: 0rem;
+    }
+    #home-hero .certificate {
+        flex-direction: column-reverse;
+    }
+    #home-hero {
+        align-items: center;
+        display: grid;
+        margin: auto;
+        grid-template-rows: 20rem calc(100vh - 20rem - 5rem - 10rem - 8rem) 10rem 8rem;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+                             "nameprof"
+                             "mockups"
+                             "description"
+                             "cta"
+    }
+    #home-hero .description {
+        max-width: 15rem;
+        padding: 0 1rem;
+    }
+    #home-hero .whoami {
+        display: grid;
+        justify-content: center;
+        grid-template-rows: 5rem auto auto;
+        grid-template-columns: auto;
+        grid-template-areas: 
+                             "wai-icons"
+                             "wai-title"
+                             "wai-description"
+    }
+    #home-hero .skills-icons {
+        grid-gap: 2rem;
+    }
+    #home-hero .mockup1 {
+        width: auto;
+        height: calc(100vh - 20rem - 5rem - 10rem - 8rem);
+        max-height: 10rem;
+    }
+    #home-hero .mockup2 {
+        width: auto;
+        height: calc(100vh - 20rem - 5rem - 10rem - 8rem);
+        max-height: 10rem;
+    }
+    #home-hero .intro {
+        align-self: center;
+        text-align: center;
+        max-width: 15rem;
+        justify-self: center;
+    }
+}

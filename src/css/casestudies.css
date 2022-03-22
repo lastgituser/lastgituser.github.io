@@ -1,0 +1,118 @@
+
+.heading-casestudies {
+    color: var(--color-secondary);
+    text-align: center;
+}
+
+.case-study {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    margin: 4rem 0rem;
+    text-decoration: none;
+}
+
+.case-study-img {
+    width: 40vw;
+    max-width: 40rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 30rem;
+}
+
+.mockup {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#mockup-gthr-1 {
+    background-image: url(../images/mockups/gthr1.png);
+}
+
+#mockup-gthr-2 {
+    background-image: url(../images/mockups/gthr2.png);
+}
+
+#mockup-mpp-1 {
+    background-image: url(../images/mockups/mpp1.png);
+}
+
+#mockup-mpp-2 {
+    background-image: url(../images/mockups/mpp2.png);
+}
+
+#mockup-dhs-1 {
+    background-image: url(../images/mockups/dhs1.png);
+}
+
+#mockup-dhs-2 {
+    background-image: url(../images/mockups/dhs2.png);
+}
+
+#mockup-ch-1 {
+    background-image: url(../images/mockups/ch1.png);
+}
+
+#mockup-ch-2 {
+    background-image: url(../images/mockups/ch2.png);
+}
+
+#mockup-h2r {
+    background-image: url(../images/mockups/h2r1.png);
+    grid-column: span 2;
+}
+
+.case-study-text {
+    max-width: 20rem;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.case-study-skills {
+    color: var(--color-secondary);
+}
+
+.case-study-button {
+    padding: 0 2rem;
+    background-color: var(--color-accent);
+    color: var(--color-primary);
+    border-radius: 1rem;
+    margin-right: auto;
+    margin-top: 2rem;
+}
+
+.case-study-button:hover {
+    background-color: var(--color-secondary);
+}
+
+.case-study-title {
+    color: var(--color-secondary);
+    margin: 0;
+}
+
+.case-study-desc {
+    color: var(--color-secondary);
+}
+
+@media only screen and (max-width: 1100px) {
+    .heading-casestudies {
+        margin: 0;
+        text-align: center;
+    }
+    .case-study {
+        display: flex;
+        align-items: center;
+        margin: 4rem 0;
+    }
+    .case-study-img {
+        width: 60vw;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .case-study-img {
+        width: 90vw;
+    }
+}
