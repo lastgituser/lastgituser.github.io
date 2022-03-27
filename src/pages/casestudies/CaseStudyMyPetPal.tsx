@@ -1,9 +1,3 @@
-import "../../css/work/casestudies/hero.css";
-import "../../css/work/casestudies/content.css";
-import "../../css/work/casestudies/index.css";
-import "../../css/work/casestudies/mpp/hero.css";
-import "../../css/work/casestudies/mpp/content.css";
-
 const CaseStudyMyPetPal = () => {
     return (
         <>

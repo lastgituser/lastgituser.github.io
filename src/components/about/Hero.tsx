@@ -1,5 +1,3 @@
-import "../../css/about/hero.css";
-
 const Hero = () => {
     return (
         <section id="about-hero">

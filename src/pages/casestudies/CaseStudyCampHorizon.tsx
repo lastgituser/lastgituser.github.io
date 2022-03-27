@@ -1,9 +1,3 @@
-import "../../css/work/casestudies/hero.css";
-import "../../css/work/casestudies/content.css";
-import "../../css/work/casestudies/index.css";
-import "../../css/work/casestudies/ch/hero.css";
-import "../../css/work/casestudies/ch/content.css";
-
 const CaseStudyCampHorizon = () => {
     return (
         <>

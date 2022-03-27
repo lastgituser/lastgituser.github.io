@@ -1,27 +1,34 @@
 import { Link } from "react-router-dom";
-import "../css/header.css";
+import FileLink from "./FileLink";
+import FileLinkHamburger from "./header/FileLinkHamburger";
+import HamburgerLink from "./header/HamburgerLink";
+import HeaderLink from "./header/HeaderLink";
 
 const Header = () => {
+    const toggleDarkMode = (event:any) => {
+        document.body.classList.toggle("dark");
+    };
     return (
         <>
-            <div className="header-back"></div>
-            <input className="hamburger-menu-input" type="checkbox" id="hamburger-menu" />
-            <header>
-                <nav className="hamburger-links">
-                    <Link className="hamburger-link" to="about"><h2>About</h2></Link>
-                    <Link className="hamburger-link" to="work"><h2>Work</h2></Link>
-                    <a className="hamburger-link" href={require("../pages/Resume-UXExp.pdf")}><h2>Resume</h2></a>
-                </nav>
-                <Link className="header-logo" to="/">
-                    <div className="img-logo"></div>
-                </Link>
-                <div id="day-night-toggle"></div>
-                <div className="header-links">
-                    <Link className="header-link" to="about"><h3>About</h3></Link>
-                    <Link className="header-link" to="work"><h3>Work</h3></Link>
-                    <a className="header-link" href={require("../pages/Resume-UXExp.pdf")}><h3>Resume</h3></a>
+            <header className="bg-secondary dark:bg-primary bg-opacity-100 lg:bg-opacity-30 dark:lg:bg-opacity-30 dark:hover:bg-opacity-100 hover:bg-opacity-100 flex justify-center">
+                <div className="transition ease-in-out duration-300 grid grid-cols-3 grid-rows-1 gap-4 px-4 md:px-16 py-4 w-full max-w-[100rem] items-center">
+                    <input className="hidden" type="checkbox" id="hamburger-menu" />
+                    <Link className="invert dark:filter-none w-16 h-16 justify-self-start" to="/">
+                        <div className="w-16 h-16 bg-logo bg-center bg-no-repeat bg-contain"></div>
+                    </Link>
+                    <div className="cursor-pointer w-24 h-12 md:w-32 md:h-16 bg-toggle-day dark:bg-toggle-night bg-center bg-no-repeat bg-contain justify-self-center" onClick={toggleDarkMode}></div>
+                    <div className="justify-self-end lg:flex flex-row items-center justify-between w-60 hidden">
+                        <HeaderLink dest="about" title="About" />
+                        <HeaderLink dest="work" title="Work" />
+                        <FileLink file={require("../pages/Resume-UXExp.pdf")} title="Resume" />
+                    </div>
+                    <label className="lg:hidden block bg-hamburger bg-contain bg-center bg-no-repeat w-16 h-16 invert justify-self-end" htmlFor="hamburger-menu"></label>
+                    <nav className="hidden grid-rows-fr gap-4 justify-items-center col-span-full p-8">
+                        <HamburgerLink dest="about" title="About" />
+                        <HamburgerLink dest="work" title="Work" />
+                        <FileLinkHamburger file={require("../pages/Resume-UXExp.pdf")} title="Resume" />
+                    </nav>
                 </div>
-                <label className="hamburger-menu" htmlFor="hamburger-menu"></label>
             </header>
         </>
     );

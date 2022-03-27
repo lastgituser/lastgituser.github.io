@@ -1,75 +1,59 @@
-import "../css/footer.css";
+import FooterHeading from "./FooterHeading";
+import FooterLink from "./FooterLink";
+import FooterLinkFile from "./FooterLinkFile";
+import FooterSocialLink from "./FooterSocialLink";
 
 const Footer = () => {
     return (
-        <footer>
-            <div className="footer-links">
-                <div className="footer-linkgroup" id="social">
-                    <h4 className="footer-heading">Social</h4>
-                    <a className="footer-link" href="https://github.com/lastgituser" target="_blank" rel="noopener noreferrer">
-                        <h3 className="footer-link-text">Github</h3>
-                    </a>
-                    <a className="footer-link" href="https://behance.net/akhilkikkeri" target="_blank" rel="noopener noreferrer">
-                        <h3 className="footer-link-text">Behance</h3>
-                    </a>
-                    <a className="footer-link" href="https://dribbble.com/anirvid" target="_blank" rel="noopener noreferrer">
-                        <h3 className="footer-link-text">Dribbble</h3>
-                    </a>
-                    {/* <a className="footer-link" href="https://instagram.com/anirvidux" target="_blank" rel="noopener noreferrer">
-                        <h3 className="footer-link-text">Instagram</h3>
-                    </a> */}
-                    <a className="footer-link" href="https://linkedin.com/in/akhilkikkeri/" target="_blank" rel="noopener noreferrer">
-                        <h3 className="footer-link-text">LinkedIn</h3>
-                    </a>
+        <footer className="grid grid-rows-[auto_auto] bg-primary dark:bg-secondary w-full justify-items-center">
+            <div className="flex flex-col items-center sm:items-start sm:grid sm:grid-cols-3 gap-8 content-center m-8 w-[80vw] max-w-[90rem] justify-items-center">
+                <div className="flex flex-col items-start" id="social">
+                    <FooterHeading title="Social" />
+                    <FooterLink title="Github" 
+                                link="https://github.com/lastgituser" />
+                    <FooterLink title="Behance" 
+                                link="https://behance.net/akhilkikkeri" />
+                    <FooterLink title="Dribbble" 
+                                link="https://dribbble.com/anirvid" />
+                    <FooterLink title="LinkedIn" 
+                                link="https://linkedin.com/in/akhilkikkeri/" />
                 </div>
-                <div className="footer-linkgroup" id="contact">
-                    <h4 className="footer-heading">Contact</h4>
-                    <a className="footer-link" href="Resume-UXExp.pdf" target="_blank">
-                        <h3 className="footer-link-text">Resume</h3>
-                    </a>
-                    <a className="footer-link" href="mailto:akhil.kikkeri.uxdev@gmail.com" target="_blank" rel="noopener noreferrer">
-                        <h3 className="footer-link-text" id="footer-link-email-text">akhil.kikkeri.uxdev@gmail.com</h3>
-                    </a>
+                <div className="flex flex-col items-start" id="contact">
+                    <FooterHeading title="Contact" />
+                    <FooterLinkFile title="Resume"
+                              file={require("../pages/Resume-UXExp.pdf")} />
+                    <FooterLink title="Email" 
+                                link="mailto:akhil.kikkeri.uxdev@gmail.com" />
                 </div>
-                <div className="footer-linkgroup" id="credits">
-                    <h4 className="footer-heading">Credits</h4>
-                    <a className="footer-link" href="https://flaticon.com/authors/freepik" target="_blank" rel="noopener noreferrer">
-                        <h3 className="footer-link-text">Freepik</h3>
-                    </a>
-                    <a className="footer-link" href="https://devicon.dev/" target="_blank" rel="noopener noreferrer">
-                        <h3 className="footer-link-text">Devicons</h3>
-                    </a>
-                    <a className="footer-link" href="https://capiche.com/miro" target="_blank" rel="noopener noreferrer">
-                        <h3 className="footer-link-text">Capiche</h3>
-                    </a>
-                    <a className="footer-link" href="https://threed.io" target="_blank" rel="noopener noreferrer">
-                        <h3 className="footer-link-text">Threed</h3>
-                    </a>
-                    <a className="footer-link" href="https://www.pexels.com/photo/scenic-view-of-a-starry-night-sky-6470652/" target="_blank" rel="noopener noreferrer">
-                        <h3 className="footer-link-text">Jeremy Muller</h3>
-                    </a>
+                <div className="flex flex-col items-start" id="credits">
+                    <FooterHeading title="Credits" />
+                    <FooterLink title="Freepik" 
+                                link="https://flaticon.com/authors/freepik" />
+                    <FooterLink title="Devicons" 
+                                link="https://devicon.dev/" />
+                    <FooterLink title="Capiche" 
+                                link="https://capiche.com/miro" />
+                    <FooterLink title="Threed" 
+                                link="https://threed.io" />
                 </div>
             </div>
-            <div className="footer-bottom">
-                <p className="footer-email">akhil.kikkeri.uxdev@gmail.com</p>
-                <div className="footer-social">
-                    <a className="footer-social-link" href="https://linkedin.com/in/akhilkikkeri" target="_blank" rel="noopener noreferrer">
-                        <div className="footer-social-img" id="footer-img-linkedin"></div>
-                    </a>
-                    {/* <a className="footer-social-link" href="https://instagram.com/anirvidux" target="_blank" rel="noopener noreferrer">
-                        <div className="footer-social-img" id="footer-img-ig"></div>
-                    </a> */}
-                    <a className="footer-social-link" href="https://dribbble.com/anirvid" target="_blank" rel="noopener noreferrer">
-                        <div className="footer-social-img" id="footer-img-dribbble"></div>
-                    </a>
-                    <a className="footer-social-link" href="https://behance.net/akhilkikkeri" target="_blank" rel="noopener noreferrer">
-                        <div className="footer-social-img" id="footer-img-behance"></div>
-                    </a>
-                    <a className="footer-social-link" href="https://github.com/lastgituser" target="_blank" rel="noopener noreferrer">
-                        <div className="footer-social-img" id="footer-img-gh"></div>
-                    </a>
+            <div className="grid grid-cols-1 grid-rows-3 xl:grid-cols-3 xl:grid-rows-1 my-8 items-center justify-center max-w-[100rem] w-full text-secondary dark:text-primary">
+                <div className="text-body font-body justify-self-center">akhil.kikkeri.uxdev@gmail.com</div>
+                <div className="flex flex-row flex-wrap gap-8 justify-self-center my-4">
+                    <FooterSocialLink name="LinkedIn"
+                                      link="https://linkedin.com/in/akhilkikkeri"
+                                      img="linkedin-black.png" />
+                    <FooterSocialLink name="Dribbble"
+                                      link="https://dribbble.com/anirvid"
+                                      img="dribbble-black.png" />
+                    <FooterSocialLink name="Behance"
+                                      link="https://behance.net/akhilkikkeri"
+                                      img="behance-logo.png" />
+                    <FooterSocialLink name="Github"
+                                      link="https://github.com/lastgituser"
+                                      img="github-big-logo.png" />
                 </div>
-                <p className="footer-copyright">Copyright 2022</p>
+                <div className="text-body font-body justify-self-center">Copyright 2022</div>
             </div>
         </footer>
     );

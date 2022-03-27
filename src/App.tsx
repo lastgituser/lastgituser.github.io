@@ -4,7 +4,7 @@ import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Work from "./pages/Work";
-import './css/index.css';
+import './index.css';
 import CaseStudyGthr from "./pages/casestudies/CaseStudyGthr";
 import CaseStudyMyPetPal from './pages/casestudies/CaseStudyMyPetPal';
 import CaseStudyDHS from './pages/casestudies/CaseStudyDHS';
