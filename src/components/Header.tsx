@@ -10,6 +10,7 @@ const Header = () => {
     };
     return (
         <>
+            <div className="absolute bg-secondary dark:bg-primary h-24 w-full -z-50"></div>
             <header className="bg-secondary dark:bg-primary bg-opacity-100 lg:bg-opacity-30 dark:lg:bg-opacity-30 dark:hover:bg-opacity-100 hover:bg-opacity-100 flex justify-center">
                 <div className="transition ease-in-out duration-300 grid grid-cols-3 grid-rows-1 gap-4 px-4 md:px-16 py-4 w-full max-w-[100rem] items-center">
                     <input className="hidden" type="checkbox" id="hamburger-menu" />
