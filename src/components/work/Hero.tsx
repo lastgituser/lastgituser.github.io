@@ -6,7 +6,7 @@ const Hero = () => {
         <>
             <section className="w-full bg-secondary dark:bg-primary">
                 <div className="grid-cols-1 grid-rows-[auto_auto] max-w-[100rem] py-8 mx-auto">
-                    <div className="text-secondary m-0 text-center text-display font-display font-bold">My Work</div>
+                    <div className="text-primary dark:text-secondary m-0 text-center text-display font-display font-bold">My Work</div>
                     <CaseStudyList />
                 </div>
             </section>

@@ -1,16 +1,16 @@
-const { url } = require("inspector");
-
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   darkMode: 'class',
   theme: {
+    columnCount: [1, 2, 4],
     colors: {
       primary: "#101820",
       secondary: "#FFFFFF",
       accent: "#FEE715",
       'accent-dark': "#004ca0",
+      'casestudy-gthr': "#ffe8ae",
     },
     fontFamily: {
       display: ['"IBM Plex Mono"', 'monospace'],
@@ -20,6 +20,7 @@ module.exports = {
       body: ['1rem', '1.618rem'],
       heading: ['2rem', '3.236rem'],
       display: ['4rem', '6.472rem'],
+      number: ['8rem', '8rem'],
     },
     extend: {
       backgroundImage: {
@@ -46,5 +47,7 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require("tailwindcss-multi-column")(),
+  ],
 }
