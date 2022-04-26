@@ -17,7 +17,9 @@ const CaseStudyGthr = () => {
         <>
             <div className="bg-mockup-img-gthr-1 hidden"></div>
             <div className="bg-mockup-img-gthr-2 hidden"></div>
-            <div className="bg-casestudy-gthr hidden"></div>
+            <div className="bg-casestudy-gthr-light hidden"></div>
+            <div className="dark:bg-casestudy-gthr-dark hidden"></div>
+            <div className="bg-casestudy-gthr-userjourney hidden"></div>
             <Hero title="gthr" titleWidth="20rem" mockup="gthr" />
             <BTF>
                 <Content colorCode="gthr" textOnly={true}>
@@ -64,7 +66,7 @@ const CaseStudyGthr = () => {
                 </Content>
                 <Content colorCode="gthr">
                     <ContentFiller />
-                    <Img></Img>
+                    <Img src="casestudy-gthr-userjourney" dim="sm:h-[30rem] sm:w-[30rem] h-[12rem] w-[16rem]"></Img>
                     <Text>
                         <Title>Definition & Ideation</Title>
                         <OneCol>The interviewees wanted to find good places to visit quickly and cheaply with their friends, so I thought gthr would include Uber and Meetup functionality. The social aspect of the app would require Facebook's social feed functionality including travel app functionality for the travel details. I decided to prioritize the functions already from Uber, Meetup, and Facebook first, wishful functions next, then functions that I thought few people would use. I slimmed the feature prioritization matrix down to focus on what I could realistically get done for a minimum viable product.</OneCol>

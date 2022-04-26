@@ -21,7 +21,7 @@ const Footer = () => {
                 <div className="flex flex-col items-start" id="contact">
                     <FooterHeading title="Contact" />
                     <FooterLinkFile title="Resume"
-                              file={require("../pages/Resume-UXExp.pdf")} />
+                              file={require("../pages/Resume-UXEng.pdf")} />
                     <FooterLink title="Email" 
                                 link="mailto:akhil.kikkeri.uxdev@gmail.com" />
                 </div>

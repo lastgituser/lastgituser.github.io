@@ -1,6 +1,6 @@
 const Bold = ({children}: any) => {
     return (
-        <div className="font-bold">{children}</div>
+        <div className="inline font-bold">{children}</div>
     );
 };
 

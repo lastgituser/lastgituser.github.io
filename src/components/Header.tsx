@@ -21,7 +21,7 @@ const Header = () => {
                     <div className="justify-self-end lg:flex flex-row items-center justify-between w-60 hidden">
                         <HeaderLink dest="about" title="About" />
                         <HeaderLink dest="work" title="Work" />
-                        <FileLink file={require("../pages/Resume-UXExp.pdf")} title="Resume" />
+                        <FileLink file={require("../pages/Resume-UXEng.pdf")} title="Resume" />
                     </div>
                     <label className="lg:hidden block bg-hamburger bg-contain bg-center bg-no-repeat w-16 h-16 invert justify-self-end" htmlFor="hamburger-menu"></label>
                     <nav className="hidden grid-rows-fr gap-4 justify-items-center col-span-full p-8">
