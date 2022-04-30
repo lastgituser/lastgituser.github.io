@@ -13,7 +13,7 @@ import CaseStudyHope2Restoration from './pages/casestudies/CaseStudyHope2Restora
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
