@@ -11,8 +11,12 @@ import Number from "../../components/casestudies/Number";
 import Prototype from "../../components/casestudies/Prototype";
 import Numbers from "../../components/casestudies/Numbers";
 import ContentFiller from "../../components/casestudies/ContentFiller";
+import { useEffect } from "react";
 
 const CaseStudyGthr = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
     return (
         <>
             <div className="bg-mockup-img-gthr-1 hidden"></div>

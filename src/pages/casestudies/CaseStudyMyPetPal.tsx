@@ -11,8 +11,12 @@ import Number from "../../components/casestudies/Number";
 import Img from "../../components/casestudies/Img";
 import Prototype from "../../components/casestudies/Prototype";
 import ContentFiller from "../../components/casestudies/ContentFiller";
+import { useEffect } from "react";
 
 const CaseStudyMyPetPal = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
     return (
         <>
             <div className="bg-mockup-img-mpp-1 hidden"></div>
