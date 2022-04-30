@@ -24,7 +24,7 @@
     "typescript": "^4.4.2",
     "web-vitals": "^2.1.0"
   },
-  "homepage": "https://lastgituser.github.io/",
+  "homepage": "https://akhilkikkeri.com/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
