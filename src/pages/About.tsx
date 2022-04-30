@@ -9,7 +9,7 @@ const About = () => {
         <>
             <Hero />
             <BTF>
-                <Section title="Proven Results" type="text">
+                <Section title="Proven Results" type="text" row=" row-start-3 md:row-start-2 xl:row-start-auto ">
                     Experience solving problems and implementing solutions for multiple clients has provides valuable experience that will help provide a stunning solution to challenging problems. Unique credentials, combining a Bachelor's Degree in Computer Science with a certificate in User Experience Design, both from Georgia Institute of Technology. Experience developing many kinds of software, including websites, apps, APIs, and deployment scripts, gives me knowledge in how to implement a variety of solutions for many problems. User Experience case studies proves crucial to understand people problem-solving at an intuitive level and developing useful products.
                 </Section>
                 <Section title="Experience" type="primary">
@@ -34,7 +34,7 @@ const About = () => {
                     <SectionItem src="languages/swift-original.svg" desc="Swift" />
                     <SectionItem src="languages/go-original.svg" desc="Go" />
                 </Section>
-                <Section title="Polyglot" type="text">
+                <Section title="Polyglot" type="text" row=" row-start-6 md:row-start-4 xl:row-start-auto ">
                 Knowledge of programming in multiple languages provides deeper understanding of software development at a conceptual level. Translating products from framework to framework or language to language, and develops products of consistent quality so clients never need to worry about the framework or language used. Learning new languages quickly, and picks up new technologies to meet constantly variable needs promptly. Knowledge in functional and object-oriented programming combine to form a well-rounded and complete understanding of programming paradigms.
                 </Section>
                 <Section title="Frameworks">
@@ -70,7 +70,7 @@ const About = () => {
                     <SectionItem src="platforms/azure-original.svg" desc="Azure" />
                     <SectionItem src="platforms/centos-original.svg" desc="CentOS" />
                 </Section>
-                <Section title="Techtrotter" type="text">
+                <Section title="Techtrotter" type="text" row=" row-start-9 md:row-start-6 xl:row-start-auto ">
                 Well-traveled in the tech world and exposed to many different technologies and platforms. Involvement in blockchain development, artificial intelligence, machine learning, database development, and app and web development aids rapid skill evolution. Learning new software development paradigms constantly. Adaptable developer capable of switching between deep backend environments, servers hosting numerous extensive and feature-rich microservices, or decentralized application environments. Skilled and motivated developer devoted to meeting variable technical requirements effectively and efficiently.
                 </Section>
                 <Section title="Tools">
@@ -84,7 +84,7 @@ const About = () => {
                     <SectionItem src="tools/jira-original.svg" desc="Jira" />
                     <SectionItem src="tools/github-original.svg" desc="Github" invert={true} />
                 </Section>
-                <Section title="Empathizer" type="text">
+                <Section title="Empathizer" type="text" row=" row-start-12 md:row-start-8 xl:row-start-auto ">
                 UX Design experience augments programming experience by ensuring software solutions solve real human problems effectively. Detailed and empathetic research provides personal understanding of problems to guide design and development into usable and delightful products. Proficiency in many UX and Graphic Design tools enormously improves look and feel of products. Meticulous usability testing experience dramatically enriches website and app interfaces to increase user involvement in many products. Information architecture and interaction design experience proves important to ease information access and increase engagement with products.
                 </Section>
                 <Section title="UX Skills">

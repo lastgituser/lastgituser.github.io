@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import FileLink from "./FileLink";
 import FileLinkHamburger from "./header/FileLinkHamburger";
@@ -8,6 +9,15 @@ const Header = () => {
     const toggleDarkMode = (event:any) => {
         document.body.classList.toggle("dark");
     };
+    const [hamburgerOpen, setHamburgerOpen] = useState(false);
+
+    const toggleHamburgerMenu = (event:any) => {
+        setHamburgerOpen(!hamburgerOpen);
+    };
+    
+    let hamburgerLinksHiddenClasses = hamburgerOpen ? "" : " hidden ";
+    let hamburgerMenuIcon = hamburgerOpen ? " bg-x " : " bg-hamburger ";
+
     return (
         <>
             <div className="absolute bg-secondary dark:bg-primary h-24 w-full -z-50"></div>
@@ -23,8 +33,8 @@ const Header = () => {
                         <HeaderLink dest="work" title="Work" />
                         <FileLink file={require("../pages/Resume-UXEng.pdf")} title="Resume" />
                     </div>
-                    <label className="lg:hidden block bg-hamburger bg-contain bg-center bg-no-repeat w-16 h-16 invert justify-self-end" htmlFor="hamburger-menu"></label>
-                    <nav className="hidden grid-rows-fr gap-4 justify-items-center col-span-full p-8">
+                    <label className={hamburgerMenuIcon + "dark:invert lg:hidden bg-contain bg-center bg-no-repeat w-16 h-16 justify-self-end"} htmlFor="hamburger-menu" onClick={toggleHamburgerMenu}></label>
+                    <nav className={hamburgerLinksHiddenClasses + "grid grid-rows-fr grid-cols-1 gap-4 justify-items-center col-span-full p-8 lg:hidden"} onClick={toggleHamburgerMenu}>
                         <HamburgerLink dest="about" title="About" />
                         <HamburgerLink dest="work" title="Work" />
                         <FileLinkHamburger file={require("../pages/Resume-UXExp.pdf")} title="Resume" />

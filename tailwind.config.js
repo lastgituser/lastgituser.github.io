@@ -33,11 +33,20 @@ module.exports = {
       number: ['8rem', '8rem'],
     },
     extend: {
+      gridRowStart: {
+        '8': '8',
+        '9': '9',
+        '10': '10',
+        '11': '11',
+        '12': '12',
+        '13': '13',
+      },
       backgroundImage: {
         'logo': "url(images/icons/logo.svg)",
         'toggle-night': "url(images/icons/daynight/night-toggle.svg)",
         'toggle-day': "url(images/icons/daynight/day-toggle.svg)",
         'hamburger': "url(images/icons/Hamburger_icon.svg)",
+        'x': "url(images/icons/x.svg)",
         'hero-mockup-1': "url(images/mockups/ch1.png)",
         'hero-mockup-2': "url(images/mockups/mpp2.png)",
         'mockup-img-gthr-1': "url(images/mockups/gthr1.png)",

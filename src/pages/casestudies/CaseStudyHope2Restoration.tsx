@@ -21,7 +21,7 @@ const CaseStudyHope2Restoration = () => {
             <div className="dark:bg-casestudy-h2r-dark hidden"></div>
             <div className="bg-casestudy-h2r-prioritymatrix hidden"></div>
             <div className="bg-casestudy-h2r-userpersona hidden"></div>
-            <Hero title="Hope2Restoration" titleWidth="36rem" mockup="h2r" />
+            <Hero title="Hope 2 Restoration" titleWidth="16rem" mockup="h2r" />
             <BTF>
                     <Content colorCode="h2r" textOnly={true}>
                         <Text>
