@@ -2,7 +2,7 @@ const Hero = () => {
     return (
         <>
             <section className="bg-transparent flex justify-center">
-                <div className="justify-items-center xl:justify-items-start px-8 md:px-16 h-[calc(100vh-6rem)] grid grid-cols-2 grid-rows-[16rem_10rem_auto_8rem] md:grid-rows-[12rem_8rem_auto_8rem] xl:grid-rows-[15rem_10rem_auto] grid-flow-col max-w-[100rem] w-full" id="home-hero">
+                <div className="justify-items-center xl:justify-items-start px-8 md:px-16 h-[calc(100vh-6rem)] grid grid-cols-2 grid-rows-[16rem_8rem_auto_8rem] md:grid-rows-[12rem_8rem_auto_8rem] xl:grid-rows-[15rem_10rem_auto] grid-flow-col max-w-[100rem] w-full" id="home-hero">
                     <div className="text-primary dark:text-secondary scale-90 sm:scale-100 col-span-full xl:col-span-1 xl:self-end flex flex-col justify-end">
                         <div className="flex flex-col md:flex-row justify-center xl:justify-start items-center md:items-baseline">
                             <span className="text-[6rem] leading-none font-display font-bold md:mr-8">Akhil</span>
@@ -23,6 +23,7 @@ const Hero = () => {
                     </div>
                 </div>
             </section>
+            <div className="relative col-span-full h-[20vh] bg-gradient-to-t from-secondary dark:from-primary via-transparent w-full z-[-1]"></div>
         </>
     );
 };

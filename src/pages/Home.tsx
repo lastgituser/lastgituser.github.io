@@ -1,6 +1,5 @@
 import CaseStudyList from "../components/CaseStudyList";
 import Hero from "../components/home/Hero";
-import HeroGradient from "../components/home/HeroGradient";
 import LetsConnect from "../components/home/LetsConnect";
 import Skills from "../components/home/Skills";
 import HeroIllustrationDark from "../components/p5/HeroIllustrationDark";
@@ -12,7 +11,6 @@ const Home = () => {
             <HeroIllustrationLight />
             <HeroIllustrationDark />
             <Hero />
-            <HeroGradient />
             <h1 className="font-display text-display font-bold text-center bg-secondary text-primary dark:bg-primary dark:text-secondary pt-4">Case Studies</h1>
             <CaseStudyList />
             <h1 className="font-display text-display font-bold text-center bg-secondary text-primary dark:bg-primary dark:text-secondary pt-4">Skills</h1>
