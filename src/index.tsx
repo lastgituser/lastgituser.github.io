@@ -1,11 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ReactGA from 'react-ga';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
-ReactGA.initialize("G-Y0KGRKRLEK");
-ReactGA.pageview(window.location.pathname + window.location.search);
 
 ReactDOM.render(
   <React.StrictMode>
