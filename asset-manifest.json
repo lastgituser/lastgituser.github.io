@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a2d7e51f.css",
-    "main.js": "/static/js/main.a22b2b89.js",
+    "main.js": "/static/js/main.b6f4da81.js",
     "static/js/787.9dd1df9c.chunk.js": "/static/js/787.9dd1df9c.chunk.js",
     "static/media/linux-original.svg": "/static/media/linux-original.0cb7bf4e5cb9ed5e2333.svg",
     "static/media/Resume-UXExp.pdf": "/static/media/Resume-UXExp.fe348d45e26b07df90f2.pdf",
@@ -70,11 +70,11 @@
     "static/media/firebase-plain.svg": "/static/media/firebase-plain.0d5ec3e60614ea8e4d7a.svg",
     "static/media/windows8-original.svg": "/static/media/windows8-original.c6bdcf3339e2ba9c67ed.svg",
     "main.a2d7e51f.css.map": "/static/css/main.a2d7e51f.css.map",
-    "main.a22b2b89.js.map": "/static/js/main.a22b2b89.js.map",
+    "main.b6f4da81.js.map": "/static/js/main.b6f4da81.js.map",
     "787.9dd1df9c.chunk.js.map": "/static/js/787.9dd1df9c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a2d7e51f.css",
-    "static/js/main.a22b2b89.js"
+    "static/js/main.b6f4da81.js"
   ]
 }
