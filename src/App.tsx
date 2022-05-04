@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactGA from 'react-ga';
 import { Routes, Route, HashRouter } from "react-router-dom";
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
@@ -12,6 +13,10 @@ import CaseStudyCampHorizon from './pages/casestudies/CaseStudyCampHorizon';
 import CaseStudyHope2Restoration from './pages/casestudies/CaseStudyHope2Restoration';
 
 function App() {
+  
+  ReactGA.initialize("G-Y0KGRKRLEK");
+  ReactGA.pageview(window.location.pathname + window.location.search);
+
   return (
     <HashRouter basename={process.env.PUBLIC_URL}>
       <Routes>
